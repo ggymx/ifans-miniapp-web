@@ -1,7 +1,10 @@
 import Vue from 'vue'
-import Index from './index.vue'
+import App from './app.vue'
+import router from './router.js'
 
 new Vue({
+  router,
   el: '#app',
-  render: h => h(Index)
+  //引入路由配置
+  render: h => h(App)
 })

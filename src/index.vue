@@ -1,21 +1,6 @@
 <template>
 <!--模板中只能包含一个标签-->
 <div>
- <header>
-      <div>
-          <ul class="naviList">
-              <li style="margin-right:70px;">
-                <button class="logo-btn">
-                  <div><img src="./assets/topic.png"/></div>轻话题
-                  </button>
-              </li>
-              <li style="margin-right:90px"><a href="#" style="color:#666;text-decoration:none">热门话题</a></li>
-              <li style="margin-right:90px"><a href="#" style="color:#666;text-decoration:none">每日热点</a></li>
-              <li><a href="#" style="color:#666;text-decoration:none">我的首页</a></li>
-            </ul>
-            <button class="login-btn">登录</button>
-      </div> 
-    </header>
     <!--话题+投稿-->
     <article style="height:auto;width:100%;">
       <div style="height:100%;width:1000px;margin:0 auto;display: flex">
