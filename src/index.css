@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+  }
+  
+  ul.naviList{
+    list-style-type: none;
+    height: 40px;
+    margin-top: 10px;
+    width: 568px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 0;
+    margin-left: 20px;
+    font-size: 16px;
+    color:#666;
+  }
+  ul.naviList>li{
+    display: inline-block
+  }
+ 
+  /*右侧小程序图标所在的div*/
+  .wechat-div{
+    width: 287px;
+    height: 122px;
+    border-style: solid;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    margin-top: 45px; 
+    margin-left: 30px;
+    font-size: 14px;
+    color:#666;
+    border-width: 1px;
+    border-color: #eee;
+  }
+
+.logo-btn{
+  width: 126px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #FFF;
+  border-style: solid;
+  border-color: #ededed;
+  border-width: 1px;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  font-size: 16px;
+}
+.logo-btn>div{
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+.logo-btn>div>img{
+  width: 24px;
+  height: 24px;
+  margin-top: 8px;
+}
+header{
+  height:60px;
+  width:100%;
+  /* background:yellow; */
+  border-bottom-style:solid;
+  border-width: 1px;
+  border-color: #ededed;
+}
+header>div{
+  height:100%;
+  width:1000px;
+  margin:0 auto;
+  /* background: pink; */
+  overflow: hidden;
+  position: relative;
+}
+.login-btn{
+  position: absolute;
+  top: 18px;
+  right: 0px;
+  font-size: 16px;
+  color: #666;
+  background-color: transparent;
+  border-style: none;
+}
