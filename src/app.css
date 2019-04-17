@@ -48,6 +48,10 @@
   align-items: center;
   font-size: 16px;
 }
+.logo-btn:focus{
+  outline-style: none;
+  /* background-color: gray; */
+}
 .logo-btn>div{
   width: 40px;
   height: 40px;

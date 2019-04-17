@@ -16,7 +16,7 @@
                   <router-link to="/dailyhot" style="color:#666;text-decoration:none">每日热点</router-link>
                 </li>
               <li>
-                  <router-link to="/my" style="color:#666;text-decoration:none">我的首页</router-link>
+                  <router-link to="/userDetail" style="color:#666;text-decoration:none">我的首页</router-link>
              </li>
             </ul>
             <button class="login-btn">登录</button>
@@ -28,7 +28,6 @@
 </template>
 
 <script>
-import listing from '../components/listing/listing.vue'
 export default {
   name: 'app',
   data () {
