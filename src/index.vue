@@ -15,7 +15,9 @@
         </listing>
         </div>
         <!--侧边栏-->
-        <sidebar></sidebar>
+        <sidebar>
+       
+        </sidebar>
 
       </div>
     </article>
@@ -26,6 +28,8 @@
 <script>
 import listing from '../components/listing/listing.vue'
 import sidebar from '../components/sidebar/sidebar.vue'
+import index from './index.js'
+
 export default {
   name: 'index',
   data () {
@@ -40,7 +44,6 @@ export default {
   }
 }
 </script>
-
 <style>
 @import url('index.css');
 </style>
