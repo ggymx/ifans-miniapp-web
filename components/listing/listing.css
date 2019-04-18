@@ -40,8 +40,35 @@
    font-size: 16px;
    color: #8590a6;
 }
-
+.name{
+    margin-right:25px;
+}
+.date{
+    white-space:pre-line;
+    margin-right:40px;
+}
 .update-div{
   margin-right: 40px;
   display: flex
+}
+/*投稿的div*/
+.cribu-div{
+    display:inline-block;
+    height:25px;
+    display:flex;
+}
+/*投稿图标*/
+.cribu-img{
+    width:21px;
+    height:17px;
+    margin-right:10px;
+    margin-top: 5px;
+}
+.cribu{
+    margin-top:2px;
+}
+.update-group{
+    display:inline-block;
+    height:25px;
+    display:flex;
 }

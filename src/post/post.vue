@@ -6,7 +6,12 @@
       <div style="height:100%;width:1000px;margin:0 auto;display: flex">
         <div style="height:100%;width:auto;padding-top:10px;">   
         <!--组件listing-->
-         <listing  v-for="(item,index) of arr" :key="index" style="margin-top:35px;" message="post"></listing>
+         <listing  v-for="(item,index) of arr" :key="index" style="margin-top:35px;" message="post">
+           <span slot="name" class="name">游哈哈</span>
+           <span slot="context" class="context">女友删除男友游戏账号，男子怒砸电脑后跪地不起，网友称其太矫情</span>
+           <span slot="date" class="date">2019.04.12 11.96</span>
+           <span slot="like" style="margin-top:2px;">109</span>
+         </listing>
         </div>
         <!--侧边栏-->
          <sidebar></sidebar>
