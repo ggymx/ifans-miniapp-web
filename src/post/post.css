@@ -2,86 +2,50 @@
     margin: 0;
   }
   
-  ul.naviList{
-    list-style-type: none;
-    height: 40px;
-    margin-top: 10px;
-    width: 568px;
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    padding: 0;
-    margin-left: 20px;
-    font-size: 16px;
-    color:#666;
-  }
-  ul.naviList>li{
-    display: inline-block
-  }
- 
-  /*右侧小程序图标所在的div*/
-  .wechat-div{
-    width: 287px;
-    height: 122px;
-    border-style: solid;
-    display: flex;
-    /* justify-content: space-evenly; */
-    align-items: center;
-    margin-top: 45px; 
-    margin-left: 30px;
-    font-size: 14px;
-    color:#666;
-    border-width: 1px;
-    border-color: #eee;
-  }
-
-.logo-btn{
-  width: 126px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: #FFF;
-  border-style: solid;
-  border-color: #ededed;
-  border-width: 1px;
+.topic{
   display: flex;
-  padding: 0;
-  align-items: center;
-  font-size: 16px;
+    flex-direction: column;
+    background: white;
+    margin-top: 35px;
+    /* padding-left: 20px; */
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #eee;
+    height: auto;
+    margin-left: 20px;
+    width: 646px;
 }
-.logo-btn>div{
-  width: 40px;
-  height: 40px;
-  background-color: #000;
-  margin-right: 15px;
-  border-radius: 50%;
+
+.topic-title{
+  margin-bottom: 30px;
+  font-size: 26px;
+  color: #333;
 }
-.logo-btn>div>img{
-  width: 24px;
-  height: 24px;
-  margin-top: 8px;
-}
-header{
-  height:60px;
-  width:100%;
-  /* background:yellow; */
-  border-bottom-style:solid;
+
+/*蓝色描边按钮*/
+.topic-btn{
+  margin-right: 30px;
+  height: 34px;
+  width: 122px;
+  background-color: #FFF;
+  border-radius: 3px;
+  border-style: solid;
   border-width: 1px;
-  border-color: #ededed;
+  border-color: #0084ff;
 }
-header>div{
-  height:100%;
-  width:1000px;
-  margin:0 auto;
-  /* background: pink; */
-  overflow: hidden;
-  position: relative;
+
+.avatar{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background:gray;
+  margin-right: 15px;
 }
-.login-btn{
-  position: absolute;
-  top: 18px;
-  right: 0px;
-  font-size: 16px;
-  color: #666;
-  background-color: transparent;
-  border-style: none;
+
+/*投稿图标*/
+.cribu-img{
+  width:21px;
+  height:17px;
+  margin-right:10px;
+  margin-top: 5px;
 }

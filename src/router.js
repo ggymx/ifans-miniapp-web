@@ -15,7 +15,7 @@ export default new Router({
     //配置路由
     routes:[
         {
-            path:'/post',
+            path:'/post/:tid',
             component:post
         },
         {

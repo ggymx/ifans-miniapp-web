@@ -6,7 +6,7 @@
     <!--内容-->
     <slot name="context" ></slot>
     <div class="status">
-      <img class="avatar">
+      <img class="avatar" v-bind:src="post.user.avatar"/>
       <!--姓名-->
       <slot name="name"></slot>
       <slot name="date"></slot>
@@ -19,11 +19,11 @@
   <!--话题详情页的listing的样式-->
   <div class="item" v-else>
     <div class="status">
-     <img class="avatar">
+     <img class="avatar" v-bind:src="post.user.avatar"/>
      
      <slot name="name"></slot>
     </div>
-      <slot name="context"></slot>
+    <slot name="context"></slot>
      
      <div class="status">
     
@@ -50,10 +50,12 @@
 export default {
   name: "listing",
   data() {
-    return {};
+    return {
+      
+    };
   },
   /*组件的自定义属性 */
-  props:['message']
+  props:['message','post']
 };
 </script>
 
