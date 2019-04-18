@@ -1,12 +1,12 @@
 <template>
-  <!--首页的listing的样式-->
-  <div class="item" v-if="message==='index'">
+  <!--话题的listing的样式-->
+  <div class="item" v-if="message==='topic'">
     <!--标题-->
     <slot name="title"></slot>
     <!--内容-->
     <slot name="context" ></slot>
     <div class="status">
-      <img class="avatar" v-bind:src="post.user.avatar"/>
+      <img class="avatar" v-bind:src="post.user.avatar" @click="goUser(post.user.id)"/>
       <!--姓名-->
       <slot name="name"></slot>
       <slot name="date"></slot>
@@ -16,10 +16,10 @@
       </div>
     </div>
   </div>
-  <!--话题详情页的listing的样式-->
+  <!--投稿的listing的样式-->
   <div class="item" v-else>
     <div class="status">
-     <img class="avatar" v-bind:src="post.user.avatar"/>
+     <img class="avatar" v-bind:src="post.user.avatar" @click="goUser(post.user.id)"/>
      
      <slot name="name"></slot>
     </div>
@@ -53,6 +53,12 @@ export default {
     return {
       
     };
+  },
+  methods:{
+    goUser(uId){
+      console.log('跳转----------------------------');
+      this.$router.push(`/user/${uId}`)
+    }
   },
   /*组件的自定义属性 */
   props:['message','post']

@@ -23,7 +23,7 @@ export default new Router({
             component:dailyhot
         },
         {
-            path:'/userDetail',
+            path:'/user/:uId',
             component:detail
         },
         {

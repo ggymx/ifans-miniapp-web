@@ -7,7 +7,7 @@
         <div style="height:100%;width:666px;padding-top:10px;">
         <!--组件listing-->
         <blockquote v-for="(item,index) of posts" :key="index">
-         <listing message="index" v-bind:post="item" v-if="item.type===1">
+         <listing message="topic" v-bind:post="item" v-if="item.type===1">
           <span slot="title"  class="title">
             <!--传递话题id-->
             <router-link v-bind:to="`/post/${item.id}`" class="not-a">{{item.title}}</router-link>
@@ -53,7 +53,6 @@ export default {
   },
   //组件初始化时执行
   created(){
-    console.log('this--------------------',this);
     this.init_data();
   },
   //方法区
@@ -67,7 +66,7 @@ export default {
       ).then(res=>{
         this.$data.posts=res.data.posts;
         this.$data.cursor=res.data.cursor;
-        // console.log('receive=======',this.$data.posts);
+        console.log('receive=======',this.$data.posts);
         }
       );
     },

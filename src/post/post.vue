@@ -9,7 +9,7 @@
       <div class="topic">
         <span class="topic-title">{{topic.title}}</span>
         <div style="display: flex;align-items: center;">
-          <img :src="topic.user.avatar" class="avatar"/>
+          <img :src="topic.user.avatar" class="avatar" @click="goUser(topic.user.id)"/>
           <span style="margin-right: 20px;font-size: 18px;color: #666;">{{topic.user.nickname}}</span>
           <span style="white-space:pre-line;white-space: pre-line;color: #666;font-size: 16px;">{{topic.createAt}}</span>
         </div>
@@ -27,7 +27,7 @@
     <blockquote v-if="posts.length!==0">
         <blockquote v-for="(item,index) of posts" :key="index">
            <!--组件listing-->
-         <listing  style="margin-top:35px;" message="detail" v-bind:post="item">
+         <listing  style="margin-top:35px;" message="post" v-bind:post="item">
            <span slot="name" class="name">{{item.user.nickname}}</span>
            <span slot="context" class="context">{{item.text}}</span>
            <span slot="date" class="date">{{item.createAt}}</span>
@@ -91,6 +91,9 @@ export default {
         this.$data.topic=res.data.post;
         console.log('接收到的topic数据--------',this.$data.topic);
       })
+    },
+    goUser(uId){
+        this.$router.push(`/user/${uId}`);
     }
   }
 }
