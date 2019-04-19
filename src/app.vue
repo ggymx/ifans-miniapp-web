@@ -10,7 +10,7 @@
                   </button>
               </li>
               <li style="margin-right:90px">
-                  <router-link to="/post" style="color:#666;text-decoration:none">热门话题</router-link>
+                  <router-link to="/index" style="color:#666;text-decoration:none">热门话题</router-link>
                 </li>
               <li style="margin-right:90px">
                   <router-link to="/dailyhot" style="color:#666;text-decoration:none">每日热点</router-link>

@@ -19,7 +19,7 @@
   <!--投稿的listing的样式-->
   <div class="item" v-else>
     <div class="status">
-     <img class="avatar" v-bind:src="post.user.avatar" @click="goUser(post.user.id)"/>
+     <img class="list-avatar" v-bind:src="post.user.avatar" @click="goUser(post.user.id)"/>
      
      <slot name="name"></slot>
     </div>
