@@ -2,9 +2,9 @@
 <!--模板中只能包含一个标签-->
 <div>
     <!--话题+投稿-->
-    <article style="height:100%;width:100%;">
-      <div style="height:100%;width:1000px;margin:0 auto;display: flex">
-        <div style="height:100%;width:666px;padding-top:10px;">
+    <article class="floor">
+      <div class="container">
+        <div class="item-div">
         <!--组件listing-->
         <blockquote v-for="(item,index) of posts" :key="index">
          <listing message="topic" v-bind:post="item" v-if="item.type===1">
@@ -22,7 +22,7 @@
          <button class="more-btn" @click="more_data">加载更多</button>
         </div>
         <!--侧边栏-->
-        <sidebar>
+        <sidebar class="notShow">
        
         </sidebar>
 

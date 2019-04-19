@@ -1,23 +1,89 @@
-listing{
-    margin-top:35px;
-}
-.more-btn{
-    height:42px;
-    width:640px;
-    background-color:#FFF;
-    margin:0 auto;
-    border-radius:6px;
-    border-color:#d3d3d3;
-    border-width:1px;
-    margin-left: 23px;
-    margin-top: 20px;
-}
-.more-btn:focus{
-    outline: none;
-    /* -webkit-outline-radius: 6px; */
-}
 
-.not-a{
-    text-decoration: none;
-    color: #333;
-}
+/*屏幕分辨率>=800px*/
+@media screen and (min-device-width: 1000px) {
+        .floor{
+            height:100%;
+            width:100%;
+        }
+        .container{
+            height:100%;
+            width:1000px;
+            margin:0 auto;
+            display: flex
+        }
+        .item-div{
+            height:100%;
+            width:666px;
+            padding-top:10px;
+        }
+        listing{
+            margin-top:35px;
+        }
+        .more-btn{
+            height:42px;
+            width:640px;
+            background-color:#FFF;
+            margin:0 auto;
+            border-radius:6px;
+            border-color:#d3d3d3;
+            border-width:1px;
+            margin-left: 23px;
+            margin-top: 20px;
+        }
+        .more-btn:focus{
+            outline: none;
+            /* -webkit-outline-radius: 6px; */
+        }
+        
+        .not-a{
+            text-decoration: none;
+            color: #333;
+        }
+    
+    }
+
+    @media screen and (max-device-width: 1000px) and (min-device-width:300px) {
+        .floor{
+            height:100%;
+            width:100%;
+        }
+        .container{
+            height:100%;
+            width:100%;
+            /* margin:0 auto; */
+            display: flex
+        }
+        .item-div{
+            height:100%;
+            width:100%;
+            padding-top:10px;
+        }
+        listing{
+            margin-top:35px;
+        }
+        .more-btn{
+            height:42px;
+            width:640px;
+            background-color:#FFF;
+            margin:0 auto;
+            border-radius:6px;
+            border-color:#d3d3d3;
+            border-width:1px;
+            margin-left: 23px;
+            margin-top: 20px;
+        }
+        .more-btn:focus{
+            outline: none;
+            /* -webkit-outline-radius: 6px; */
+        }
+        
+        .not-a{
+            text-decoration: none;
+            color: #333;
+        }
+
+        .notShow{
+            display: none;
+        }
+    
+    }

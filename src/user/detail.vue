@@ -74,5 +74,5 @@ export default {
 </script>
 
 <style>
-
+@import url('detail.css');
 </style>

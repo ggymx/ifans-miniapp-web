@@ -1,6 +1,6 @@
 <template>
 <!--模板中只能包含一个标签-->
-<div>
+<div style="width:100%">
  <header>
       <div>
           <ul class="naviList">
@@ -48,5 +48,6 @@ export default {
 </script>
 
 <style>
+/* @import url('../bootstrap/css/bootstrap.min.css'); */
 @import url('app.css');
 </style>
