@@ -1,15 +1,14 @@
 <template>
 <!--模板中只能包含一个标签-->
-<div>
     <!--话题+投稿-->
     <article style="height:auto;width:100%;">
-      <div style="height:100%;width:1000px;margin:0 auto;display: flex">
-        <div style="height:100%;width:666px;padding-top:10px;">   
+      <div class="container">
+        <div class="item-div">   
        <!--话题-->
       <div class="topic">
         <span class="topic-title">{{topic.title}}</span>
         <div style="display: flex;align-items: center;">
-          <img :src="topic.user.avatar" class="avatar" @click="goUser(topic.user.id)"/>
+          <img :src="topic.user.avatar" class="post-avatar" @click="goUser(topic.user.id)"/>
           <span style="margin-right: 20px;font-size: 18px;color: #666;">{{topic.user.nickname}}</span>
           <span style="white-space:pre-line;white-space: pre-line;color: #666;font-size: 16px;">{{topic.createAt}}</span>
         </div>
@@ -46,8 +45,6 @@
          <sidebar></sidebar>
       </div>
     </article>
-   
-  </div>
 </template>
 
 <script>

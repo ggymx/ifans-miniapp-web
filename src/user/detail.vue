@@ -1,9 +1,12 @@
 <template>
-   <div>
     <!--话题+投稿-->
-    <article style="height:100%;width:100%;">
-      <div style="height:100%;width:1000px;margin:0 auto;display: flex">
-        <div style="height:100%;width:666px;padding-top:10px;">
+    <article class="floor">
+      <div class="container">
+        <div class="item-div">
+        <div class="top-user-div">
+          <img :src="receive.user.avatar">
+          <span>{{receive.user.nickname}}</span>
+        </div>
         <!--话题listing-->
         <blockquote v-for="(item,index) of receive.posts" :key="index">
          <listing message="topic" v-bind:post="item" v-if="item.type===1">
@@ -38,7 +41,6 @@
       </div>
     </article>
    
-  </div>
 </template>
 
 <script>

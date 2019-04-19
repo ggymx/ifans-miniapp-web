@@ -31,7 +31,7 @@
     display: flex;
     align-items: center;
 }
-.avatar{
+.list-avatar{
     width:30px;
     height:30px;
     border-radius:50%;
@@ -76,7 +76,7 @@
 }
 }
 
-@media screen and (max-device-width:1000px) and (min-device-width:300px){
+@media screen and (max-device-width:999px) and (min-device-width:768px){
     .item{
         display: flex;
         flex-direction: column;
@@ -87,8 +87,8 @@
         border-width: 2px;
         border-color: #eee;
         height:auto;
-        margin-left: 20px;
-        width: 100%;
+        margin-left: 28px;
+        width: 566px;
     }
     .title{
         margin-bottom:25px;
@@ -99,7 +99,7 @@
         margin-bottom:25px;
         font-size: 16px;
         color: #999;
-        width: 580px;
+        width: 566px;
         display: inline-block
     }
     /*包含头像，姓名等状态文本*/
@@ -108,7 +108,7 @@
         display: flex;
         align-items: center;
     }
-    .avatar{
+    .list-avatar{
         width:30px;
         height:30px;
         border-radius:50%;
@@ -124,10 +124,10 @@
     }
     .date{
         white-space:pre-line;
-        margin-right:40px;
+        margin-right:45px;
     }
     .update-div{
-      margin-right: 40px;
+      margin-right: 30px;
       display: flex
     }
     /*投稿的div*/

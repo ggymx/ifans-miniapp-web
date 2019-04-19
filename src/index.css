@@ -1,5 +1,5 @@
 
-/*屏幕分辨率>=800px*/
+/*兼容电脑*/
 @media screen and (min-device-width: 1000px) {
         .floor{
             height:100%;
@@ -42,20 +42,21 @@
     
     }
 
-    @media screen and (max-device-width: 1000px) and (min-device-width:300px) {
+    /*兼容平板*/
+    @media screen and (max-device-width: 999px) and (min-device-width:768px) {
         .floor{
             height:100%;
             width:100%;
         }
         .container{
             height:100%;
-            width:100%;
-            /* margin:0 auto; */
+            width:768px;
+            margin:0 auto;
             display: flex
         }
         .item-div{
             height:100%;
-            width:100%;
+            width:594px;
             padding-top:10px;
         }
         listing{
@@ -63,7 +64,7 @@
         }
         .more-btn{
             height:42px;
-            width:640px;
+            width:566px;
             background-color:#FFF;
             margin:0 auto;
             border-radius:6px;
@@ -81,9 +82,4 @@
             text-decoration: none;
             color: #333;
         }
-
-        .notShow{
-            display: none;
-        }
-    
     }

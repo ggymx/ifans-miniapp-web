@@ -18,8 +18,8 @@
               <li>
                   <router-link to="/user" style="color:#666;text-decoration:none">我的首页</router-link>
              </li>
-            </ul>
-            <button class="login-btn">登录</button>
+            </ul><!--
+            --><button class="login-btn">登录</button>
       </div> 
     </header>
    <!--路由匹配的组件渲染-->

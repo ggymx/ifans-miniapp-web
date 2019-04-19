@@ -6,7 +6,7 @@
     <!--内容-->
     <slot name="context" ></slot>
     <div class="status">
-      <img class="avatar" v-bind:src="post.user.avatar" @click="goUser(post.user.id)"/>
+      <img class="list-avatar" v-bind:src="post.user.avatar" @click="goUser(post.user.id)"/>
       <!--姓名-->
       <slot name="name"></slot>
       <slot name="date"></slot>
@@ -66,5 +66,5 @@ export default {
 </script>
 
 <style>
- @import url(listing.css);
+ @import url('listing.css');
 </style>

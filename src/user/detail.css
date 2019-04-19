@@ -1,3 +1,20 @@
+@media screen and (min-device-width:1000px){
+    .floor{
+        height:100%;
+        width:100%;
+    }
+    .container{
+        height:100%;
+        width:1000px;
+        margin:0 auto;
+        display: flex
+    }
+    .item-div{
+        height:100%;
+        width:666px;
+        padding-top:10px;
+    }
+
 .more-btn{
     height:42px;
     width:640px;
@@ -16,4 +33,79 @@
 .not-a{
     text-decoration: none;
     color: #333;
+}
+
+.top-user-div{
+  display: none;
+}
+}
+
+@media screen and (max-device-width:999px) and (min-device-width:768px){
+    .floor{
+        height:100%;
+        width:100%;
+    }
+    .container{
+        height:100%;
+        width:768px;
+        margin:0 auto;
+        display: flex
+    }
+    .item-div{
+        height:100%;
+        width:594px;
+        padding-top:10px;
+    }
+
+    .more-btn{
+        height:42px;
+        width:640px;
+        background-color:#FFF;
+        margin:0 auto;
+        border-radius:6px;
+        border-color:#d3d3d3;
+        border-width:1px;
+        margin-left: 23px;
+        margin-top: 20px;
+    }
+    .more-btn:focus{
+        outline: none;
+        /* -webkit-outline-radius: 6px; */
+    }
+    .not-a{
+        text-decoration: none;
+        color: #333;
+    }
+
+    .more-btn{
+        height:42px;
+        width:566px;
+        background-color:#FFF;
+        margin:0 auto;
+        border-radius:6px;
+        border-color:#d3d3d3;
+        border-width:1px;
+        margin-left: 23px;
+        margin-top: 20px;
+    }
+    .top-user-div{
+        width: 554px;
+        /* height: 84px; */
+        /* background-color: red; */
+        border-bottom-style: solid;
+        border-width: 2px;
+        border-color: #eee;
+        margin-left: 35px;
+        margin-top: 35px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 35px;
+        font-size:26px;color:#333
+    }
+    .top-user-div>img{
+        width:84px;
+        height:84px;
+        border-radius:50%;
+        margin-right:25px;
+    }
 }

@@ -1,7 +1,21 @@
+@media screen and (min-device-width:1000px){
 *{
     margin: 0;
   }
   
+  .container{
+    height:100%;
+    width:1000px;
+    margin:0 auto;
+    display: flex
+  }
+
+.item-div{
+    height:100%;
+    width:666px;
+    padding-top:10px;
+}
+
 .topic{
   display: flex;
     flex-direction: column;
@@ -14,6 +28,73 @@
     height: auto;
     margin-left: 20px;
     width: 646px;
+}
+
+.topic-title{
+  margin-bottom: 30px;
+  font-size: 26px;
+  color: #333;
+}
+
+/*蓝色描边按钮*/
+.topic-btn{
+  margin-right: 30px;
+  height: 34px;
+  width: 122px;
+  background-color: #FFF;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0084ff;
+  color:#0084ff
+}
+
+.post-avatar{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background:gray;
+  margin-right: 15px;
+}
+
+/*投稿图标*/
+.cribu-img{
+  width:21px;
+  height:17px;
+  margin-right:10px;
+  margin-top: 5px;
+}
+}
+
+@media screen and (max-device-width:999px) and (min-device-width:768px){
+  *{
+    margin: 0;
+  }
+  
+  .container{
+    height:100%;
+    width:768px;
+    margin:0 auto;
+    display: flex
+  }
+  .item-div{
+    height:100%;
+    width:594px;
+    padding-top:10px;
+}
+
+.topic{
+  display: flex;
+    flex-direction: column;
+    background: white;
+    margin-top: 35px;
+    /* padding-left: 20px; */
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #eee;
+    height: auto;
+    margin-left: 28px;
+    width: 566px;
 }
 
 .topic-title{
@@ -49,4 +130,5 @@
   height:17px;
   margin-right:10px;
   margin-top: 5px;
+}
 }

@@ -22,7 +22,7 @@
          <button class="more-btn" @click="more_data">加载更多</button>
         </div>
         <!--侧边栏-->
-        <sidebar class="notShow">
+        <sidebar>
        
         </sidebar>
 

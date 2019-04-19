@@ -1,4 +1,10 @@
   /*右侧小程序图标所在的div*/
+  @media screen and (min-device-width:1000px){
+    .right-div{
+      height:auto;
+      width:auto;
+      margin-left:10px;
+    }
   .wechat-div{
     width: 287px;
     height: 122px;
@@ -13,3 +19,57 @@
     border-width: 1px;
     border-color: #eee;
   }
+  .wechat-div>img{
+    width:94px;
+    height:94px;
+    margin-left:40px;
+    margin-right:20px;
+  }
+  .user-div{
+    margin-top:45px;
+    margin-left:30px;
+    display:flex;
+    align-items: center;
+  }
+  .slide-avatar{
+    width:94px;
+    height:94px;
+    border-radius:50%;
+    background:gray;
+    margin-right:20px;
+  }
+}
+
+@media screen and (max-device-width:999px) and (min-device-width:768px){
+  .right-div{
+    height:auto;
+    width:164px;
+    margin-left:10px;
+  }
+  .wechat-div{
+    width: 140px;
+    height: 122px;
+    border-style: solid;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    margin-top: 45px; 
+    margin-left: 4px;
+    font-size: 14px;
+    color:#666;
+    border-width: 1px;
+    border-color: #eee;
+  }
+  .wechat-div>img{
+    width:94px;
+    height:94px;
+    margin-left:23px;
+  }
+  .tip{
+    display:none;
+  }
+  .user-div{
+    display:none;
+  }
+
+}
