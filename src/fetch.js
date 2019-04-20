@@ -1,6 +1,6 @@
 // import esPromise from 'es6-promise'
 import axios from 'axios'
-import qs from 'qs'
+// import qs from 'qs'
 
 //创建axios的实例
 const httpService=axios.create({
