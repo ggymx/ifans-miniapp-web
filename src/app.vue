@@ -18,9 +18,19 @@
               <li>
                   <router-link to="/user" style="color:#666;text-decoration:none">我的首页</router-link>
              </li>
-            </ul><!--
-            --><button class="login-btn">登录</button>
-      </div> 
+            </ul>
+             <button class="logo-btn isHide" @click="goHome">
+                  <div><img src="./assets/topic.png"/></div>轻话题
+            </button><!--
+            --><button class="login-btn">登录</button> 
+             
+      </div>
+          <ul class="naviList-iphone">
+            <li style="margin-right:81px">热门话题</li>
+            <li style="margin-right:81px">每日热点</li>
+            <li>我的首页</li>
+          </ul>
+         
     </header>
    <!--路由匹配的组件渲染-->
    <router-view></router-view>
