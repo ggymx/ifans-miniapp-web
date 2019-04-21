@@ -5,44 +5,50 @@
       <div class="container">
         <div class="item-div">   
        <!--话题-->
+
+
       <div class="topic">
         <span class="topic-title">{{topic.title}}</span>
         <div style="display: flex;align-items: center;">
           <img :src="topic.user.avatar" class="post-avatar" @click="goUser(topic.user.id)"/>
           <span style="margin-right: 20px;font-size: 18px;color: #666;">{{topic.user.nickname}}</span>
-          <span style="white-space:pre-line;white-space: pre-line;color: #666;font-size: 16px;">{{topic.createAt}}</span>
+          <!-- <span style="white-space:pre-line;white-space: pre-line;color: #666;font-size: 16px;">{{topic.createAt}}</span> -->
+         <span style="white-space:pre-line;white-space: pre-line;color: #666;font-size: 16px;">2018.04.12 11.25</span>
         </div>
         <span style="margin-top: 35px;font-size: 18px;color: #666;">{{topic.text}}</span>
         <div style="margin-top: 30px;font-size: 16px;color: #8590a6;margin-bottom: 30px">
           <button class="topic-btn">参与话题</button>
           <button class="topic-btn">分享话题</button>
           <div style="display:inline-block;margin-left:5px;">
-             <img src="../../src/assets/time.png" class="cribu-img"/><span style="margin-right: 30px;">{{topic.attendCount}}人投稿</span>
-             <img src="../../src/assets/time.png" class="cribu-img"/><span style="margin-right: 30px;">举报</span>
-             <img src="../../src/assets/arrows.png" style="width:22px;height:5px;">
+             <img src="../../src/assets/time.png" class="post-cribu-img"/><span class="status-text">{{topic.attendCount}}人投稿</span>
+             <img src="../../src/assets/time.png" class="post-cribu-img"/><span class="status-text">举报</span>
+             <img src="../../src/assets/arrows.png" class="post-arrow-btn">
           </div>
         </div>
       </div>
+
+
     <blockquote v-if="posts.length!==0">
         <blockquote v-for="(item,index) of posts" :key="index">
            <!--组件listing-->
          <listing  style="margin-top:35px;" message="post" v-bind:post="item">
            <span slot="name" class="name">{{item.user.nickname}}</span>
            <span slot="context" class="context">{{item.text}}</span>
-           <span slot="date" class="date">{{item.createAt}}</span>
+           <!-- <span slot="date" class="date">{{item.createAt}}</span> -->
+            <span slot="date" class="date">2018.04.12 11.25</span>
            <span slot="like" style="margin-top:2px;">{{item.likeCount}}</span>
            <!-- <img slot="like" v-bind:src="`${item.user.avatar}`"/> -->
          </listing>
         </blockquote>
     </blockquote>
     <blockquote v-else>
-          <div style="width:646px;height:600px;margin-left:20px">
+          <div class="nohave-info">
             该话题竟然是空的，感觉投稿抢占沙发吧~
           </div>
     </blockquote>
         </div>
         <!--侧边栏-->
-         <sidebar></sidebar>
+         <sidebar class="post-hide"></sidebar>
       </div>
     </article>
 </template>
