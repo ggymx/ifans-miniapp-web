@@ -26,7 +26,7 @@
     display: inline-block
 }
 /*包含头像，姓名等状态文本*/
-.status{
+.topic-status{
     margin-bottom:30px;
     display: flex;
     align-items: center;
@@ -74,6 +74,12 @@
     height:25px;
     display:flex;
 }
+.list-arrow-btn{
+    width:32px;
+    height:7px;
+    margin-right:10px;
+    margin-top: 10px;
+}
 }
 
 @media screen and (max-device-width:999px) and (min-device-width:768px){
@@ -103,7 +109,7 @@
         display: inline-block
     }
     /*包含头像，姓名等状态文本*/
-    .status{
+    .topic-status{
         margin-bottom:30px;
         display: flex;
         align-items: center;
@@ -151,6 +157,12 @@
         height:25px;
         display:flex;
     }
+    .list-arrow-btn{
+        width:32px;
+        height:7px;
+        margin-right:10px;
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-device-width:767px){
@@ -180,7 +192,7 @@
         display: inline-block
     }
     /*包含头像，姓名等状态文本*/
-    .status{
+    .topic-status{
         margin-bottom:30px;
         display: flex;
         align-items: center;
@@ -204,7 +216,7 @@
         margin-right:20px;
     }
     .update-div{
-      margin-right: 40px;
+      margin-right: 20px;
       display: flex
     }
     /*投稿的div*/
@@ -227,5 +239,21 @@
         display:inline-block;
         height:25px;
         display:flex;
+    }
+    .update-div>.cribu-img{
+        width:17px;
+        height:17px;
+        margin-right:5px;
+        margin-top: 5px;
+    }
+    .update-div>span{
+        margin-top:2px;
+        font-size:10px;
+    }
+    .list-arrow-btn{
+        width:15px;
+        height:7px;
+        margin-right:10px;
+        margin-top: 10px;
     }
 }

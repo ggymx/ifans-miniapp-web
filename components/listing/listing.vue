@@ -5,7 +5,7 @@
     <slot name="title"></slot>
     <!--内容-->
     <slot name="context" ></slot>
-    <div class="status">
+    <div class="topic-status">
       <img class="list-avatar" v-bind:src="post.user.avatar" @click="goUser(post.user.id)"/>
       <!--姓名-->
       <slot name="name"></slot>
@@ -18,14 +18,14 @@
   </div>
   <!--投稿的listing的样式-->
   <div class="item" v-else>
-    <div class="status">
+    <div class="topic-status">
      <img class="list-avatar" v-bind:src="post.user.avatar" @click="goUser(post.user.id)"/>
      
      <slot name="name"></slot>
     </div>
     <slot name="context"></slot>
      
-     <div class="status">
+     <div class="topic-status">
     
       <slot name="date"></slot>
       <div class="update-group">
@@ -35,13 +35,13 @@
           </div>
           <div class="update-div">
           <img src="../../src/assets/share.png" class="cribu-img"/><!--
-          --><span style="margin-top:2px;">分享</span>
+          --><span>分享</span>
           </div>
           <div class="update-div">
            <img src="../../src/assets/time.png" class="cribu-img"/><!--
-          --><span style="margin-top:2px;">举报</span>
+          --><span>举报</span>
           </div>
-           <img src="../../src/assets/arrow.png" style="width:32px;height:7px;margin-right:10px;margin-top: 10px;"/>
+           <img src="../../src/assets/arrow.png" class="list-arrow-btn"/>
       </div>
     </div>
   </div>
