@@ -8,3 +8,7 @@
 //     limit: 10
 // })
 // console.log('data-------------------：',resData);
+// $('#pari').click(function(){
+//     alert('测试');
+//     console.log('测试');
+// })

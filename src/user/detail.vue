@@ -71,8 +71,7 @@ export default {
           const loading = this.$loading({
           lock: true,
           text: '拼命加载中',
-          spinner: 'el-icon-loading',
-          background: 'rgba(0, 0, 0, 0.7)'
+          background: 'rgba(0, 0, 0, 0)'
           });
             const userId=this.$route.params.uId
             fetch.get('/v1/user/detail',{

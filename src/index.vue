@@ -63,8 +63,7 @@ export default {
        const loading = this.$loading({
           lock: true,
           text: '拼命加载中',
-          spinner: 'el-icon-loading',
-          background: 'rgba(0, 0, 0, 0.7)'
+          background: 'rgba(0, 0, 0, 0)'
         });
 
       fetch.get('/v1/post/home-list',
@@ -84,6 +83,12 @@ export default {
       );
     },
     more_data(){
+       const loading = this.$loading({
+          lock: true,
+          text: '加载更多',
+          background: 'rgba(0, 0, 0, 0)'
+        });
+
       console.log('点击进入详情');
         fetch.get('/v1/post/home-list',
       {
@@ -94,6 +99,9 @@ export default {
         this.$data.posts=this.$data.posts.concat(res.data.posts);
         this.$data.cursor=res.data.cursor;
         console.log('-----------------------cursor:',this.$data.cursor);
+        setTimeout(() => {
+           loading.close();
+        }, 300);
         }
       );
     }
@@ -102,6 +110,7 @@ export default {
 }
 
 </script>
+
 <style>
 @import url('index.css');
 </style>

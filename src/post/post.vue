@@ -16,8 +16,8 @@
         </div>
         <span class="topic-text">{{topic.text}}</span>
         <div class="oper-div">
-          <button class="topic-btn">参与话题</button>
-          <button class="topic-btn">分享话题</button>
+          <button class="topic-btn" id="pari">参与话题</button>
+          <button class="topic-btn" id="share">分享话题</button>
           <div class="post-oper-div">
              <img src="../../src/assets/post.png" class="post-cribu-img"/><span class="status-text">{{topic.attendCount}}人投稿</span>
              <img src="../../src/assets/flag.png" id="post-flag"/><span class="status-text">举报</span>
@@ -93,8 +93,7 @@ export default {
         const loading = this.$loading({
           lock: true,
           text: '拼命加载中',
-          spinner: 'el-icon-loading',
-          background: 'rgba(0, 0, 0, 0.7)'
+          background: 'rgba(0, 0, 0, 0)'
         });
 
       const tid=this.$route.params.tid;
