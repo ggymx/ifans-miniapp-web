@@ -100,7 +100,8 @@
         display: flex;
         align-items: center;
         padding-bottom: 35px;
-        font-size:26px;color:#333
+        font-size:26px;
+        color:#333
     }
     .top-user-div>img{
         width:84px;
@@ -125,6 +126,8 @@
         height:100%;
         width:100%;
         padding-top:10px;
+        padding-left: 17px;
+        padding-right: 17px;
     }
 
 .more-btn{
@@ -144,7 +147,8 @@
 }
 .not-a{
     text-decoration: none;
-    color: #333;
+    color: rgb(51,51,51);
+    font-size: 17px;
 }
 
 .user-hide{
@@ -166,7 +170,7 @@
     font-size:26px;color:#333
 }
 .top-user-div>img{
-    margin-left: 17px;
+    /* margin-left: 17px; */
     width:61px;
     height:61px;
     border-radius:50%;

@@ -22,7 +22,7 @@
           <div style="display:inline-block;margin-left:5px;">
              <img src="../../src/assets/time.png" class="post-cribu-img"/><span class="status-text">{{topic.attendCount}}人投稿</span>
              <img src="../../src/assets/time.png" class="post-cribu-img"/><span class="status-text">举报</span>
-             <img src="../../src/assets/arrows.png" class="post-arrow-btn">
+             <img src="../../src/assets/arrow.png" class="post-arrow-btn">
           </div>
         </div>
       </div>

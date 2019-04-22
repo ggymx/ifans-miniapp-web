@@ -30,15 +30,15 @@
       <slot name="date"></slot>
       <div class="update-group">
           <div class="update-div">
-          <img src="../../src/assets/like.png" class="cribu-img"/><!--
+          <img src="../../src/assets/heart.png" id="heart"/><!--
           --><slot name="like"></slot>
           </div>
           <div class="update-div">
-          <img src="../../src/assets/share.png" class="cribu-img"/><!--
+          <img src="../../src/assets/plane.png" id="plane"/><!--
           --><span>分享</span>
           </div>
           <div class="update-div">
-           <img src="../../src/assets/time.png" class="cribu-img"/><!--
+           <img src="../../src/assets/flag.png" id="flag"/><!--
           --><span>举报</span>
           </div>
            <img src="../../src/assets/arrow.png" class="list-arrow-btn"/>

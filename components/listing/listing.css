@@ -1,3 +1,31 @@
+/*功能图标*/
+.cribu-img{
+    width:21px;
+    height:17px;
+    margin-right:10px;
+    margin-top: 5px;
+}
+
+#heart,#plane,#flag{
+    margin-right:10px;
+    margin-top: 5px;
+    height:17px;
+}
+#heart{
+    width:18px;  
+}
+#plane{
+    width:17px;
+}
+#flag{
+      width:17px;  
+}
+.list-arrow-btn{
+    width:22px;
+    height:5px;
+    margin-right:10px;
+    margin-top: 10px;
+}
 
 @media screen and (min-device-width:1000px){
 .item{
@@ -60,12 +88,8 @@
     display:flex;
 }
 /*投稿图标*/
-.cribu-img{
-    width:21px;
-    height:17px;
-    margin-right:10px;
-    margin-top: 5px;
-}
+
+
 .cribu{
     margin-top:2px;
 }
@@ -74,12 +98,7 @@
     height:25px;
     display:flex;
 }
-.list-arrow-btn{
-    width:32px;
-    height:7px;
-    margin-right:10px;
-    margin-top: 10px;
-}
+
 }
 
 @media screen and (max-device-width:999px) and (min-device-width:768px){
@@ -142,13 +161,7 @@
         height:25px;
         display:flex;
     }
-    /*投稿图标*/
-    .cribu-img{
-        width:21px;
-        height:17px;
-        margin-right:10px;
-        margin-top: 5px;
-    }
+  
     .cribu{
         margin-top:2px;
     }
@@ -157,12 +170,7 @@
         height:25px;
         display:flex;
     }
-    .list-arrow-btn{
-        width:32px;
-        height:7px;
-        margin-right:10px;
-        margin-top: 10px;
-    }
+ 
 }
 
 @media screen and (max-device-width:767px){
@@ -229,9 +237,22 @@
     .cribu-img{
         width:17px;
         height:13px;
-        margin-right:10px;
-        margin-top: 5px;
     }
+
+    
+#heart{
+    width:14px;
+    height:13px;
+}
+#plane{
+    width:14px;
+    height:14px;
+}
+#flag{
+      width:14px;
+    height:14px;
+}
+
     .cribu{
         margin-top:2px;
         font-size: 11px;
@@ -252,9 +273,7 @@
         font-size:10px;
     }
     .list-arrow-btn{
-        width:15px;
-        height:7px;
-        margin-right:10px;
-        margin-top: 10px;
+        width:14px;
+        height:3px;
     }
 }
