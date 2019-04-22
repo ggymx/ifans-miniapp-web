@@ -1,6 +1,6 @@
 import Vue from 'vue'
 
-import $ from 'jquery'
+// import jquery from 'jquery'
 
 import elementUi from 'element-ui'
 // import 'element-ui/lib/theme-chalk/index.css';
@@ -12,7 +12,7 @@ import store from './vuex.js'
 //引入element-ui
 Vue.use(elementUi);
 //引入jquery
-Vue.use($);
+// Vue.use(jquery);
 
 new Vue({
   router,

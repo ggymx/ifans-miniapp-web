@@ -122,6 +122,9 @@ export default {
     }
   }
 }
+// $("#pari").click(function(){
+//   alert('点击触发');
+// });
 </script>
 
 <style>
