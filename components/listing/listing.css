@@ -170,7 +170,7 @@
         display: flex;
         flex-direction: column;
         background: white;
-        margin-top: 35px;
+        margin-top: 17.5px;
         /* padding-left: 20px; */
         border-bottom-style: solid;
         border-width: 2px;
@@ -186,26 +186,26 @@
     }
     .context{
         margin-bottom:25px;
-        font-size: 16px;
+        font-size: 13px;
         color: #999;
         width: 100%;
         display: inline-block
     }
     /*包含头像，姓名等状态文本*/
     .topic-status{
-        margin-bottom:30px;
+        margin-bottom:17.5px;
         display: flex;
         align-items: center;
     }
     .list-avatar{
-        width:30px;
-        height:30px;
+        width:17px;
+        height:17px;
         border-radius:50%;
         background:gray;
         margin-right: 10px;
     }
     .name,.date{
-       font-size: 16px;
+       font-size: 11px;
        color: #8590a6;
     }
     .name{
@@ -227,13 +227,14 @@
     }
     /*投稿图标*/
     .cribu-img{
-        width:21px;
-        height:17px;
+        width:17px;
+        height:13px;
         margin-right:10px;
         margin-top: 5px;
     }
     .cribu{
         margin-top:2px;
+        font-size: 11px;
     }
     .update-group{
         display:inline-block;

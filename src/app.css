@@ -1,6 +1,11 @@
 *{
     margin: 0;
   }
+
+  .app-not-a{
+    color:rgb(102,102,102);
+    text-decoration:none;
+   }
   
   @media screen and (min-device-width:1000px){
   ul.naviList{
@@ -82,6 +87,7 @@ header>div{
 ul.naviList-iphone{
   display: none;
 }
+
 }
 
 @media screen and (max-device-width:999px) and (min-device-width:768px){
@@ -164,6 +170,7 @@ header>div{
  ul.naviList-iphone{
    display: none;
  }
+
 }
 
 @media screen and (max-device-width:767px){
@@ -182,6 +189,7 @@ header>div{
   padding: 0;
   align-items: center;
   font-size: 16px;
+  margin-left: 17px;
   /* margin-top: 10px; */
 }
 .logo-btn:focus{
@@ -224,11 +232,12 @@ header>div{
 .login-btn{
   position: absolute;
   top: 18px;
-  right: 0px;
+  right: 17px;
   font-size: 16px;
   color: #666;
   background-color: transparent;
   border-style: none;
+  padding-right: 0px;
   /* width:100%;
   background: red; */
 }
@@ -246,5 +255,8 @@ ul.naviList-iphone{
 ul.naviList-iphone>li{
   display: inline-block;
 }
+.app-not-a{
+  font-size: 14px
+ }
 
 }

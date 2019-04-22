@@ -9,14 +9,14 @@
                   <div><img src="./assets/topic.png"/></div>轻话题
                   </button>
               </li>
-              <li style="margin-right:90px">
-                  <router-link to="/index" style="color:#666;text-decoration:none">热门话题</router-link>
+              <li style="margin-right:81px">
+                  <router-link to="/index" class="app-not-a">热门话题</router-link>
                 </li>
-              <li style="margin-right:90px">
-                  <router-link to="/dailyhot" style="color:#666;text-decoration:none">每日热点</router-link>
+              <li style="margin-right:81px">
+                  <router-link to="/dailyhot" class="app-not-a">每日热点</router-link>
                 </li>
               <li>
-                  <router-link to="/user" style="color:#666;text-decoration:none">我的首页</router-link>
+                  <router-link to="/user" class="app-not-a">我的首页</router-link>
              </li>
             </ul>
              <button class="logo-btn isHide" @click="goHome">
@@ -26,14 +26,14 @@
              
       </div>
           <ul class="naviList-iphone">
-            <li style="margin-right:81px">
-              <router-link to="/index" style="color:#666;text-decoration:none">热门话题</router-link>
+            <li style="margin-right:81px;margin-left:8px">
+              <router-link to="/index" class="app-not-a">热门话题</router-link>
             </li>
             <li style="margin-right:81px">
-                <router-link to="/dailyhot" style="color:#666;text-decoration:none">每日热点</router-link>
+                <router-link to="/dailyhot" class="app-not-a">每日热点</router-link>
             </li>
-            <li>
-               <router-link to="/user" style="color:#666;text-decoration:none">我的首页</router-link>
+            <li style="margin-left:5px;">
+               <router-link to="/user" class="app-not-a">我的首页</router-link>
             </li>
           </ul>
          
