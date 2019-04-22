@@ -6,22 +6,21 @@
         <div class="item-div">   
        <!--话题-->
 
-
       <div class="topic">
         <span class="topic-title">{{topic.title}}</span>
-        <div style="display: flex;align-items: center;">
+        <div class="avatar-div">
           <img :src="topic.user.avatar" class="post-avatar" @click="goUser(topic.user.id)"/>
-          <span style="margin-right: 20px;font-size: 18px;color: #666;">{{topic.user.nickname}}</span>
+          <span class="post-username">{{topic.user.nickname}}</span>
           <!-- <span style="white-space:pre-line;white-space: pre-line;color: #666;font-size: 16px;">{{topic.createAt}}</span> -->
-         <span style="white-space:pre-line;white-space: pre-line;color: #666;font-size: 16px;">2018.04.12 11.25</span>
+         <span class="post-date">2018.04.12 11.25</span>
         </div>
-        <span style="margin-top: 35px;font-size: 18px;color: #666;">{{topic.text}}</span>
-        <div style="margin-top: 30px;font-size: 16px;color: #8590a6;margin-bottom: 30px">
+        <span class="topic-text">{{topic.text}}</span>
+        <div class="oper-div">
           <button class="topic-btn">参与话题</button>
           <button class="topic-btn">分享话题</button>
-          <div style="display:inline-block;margin-left:5px;">
-             <img src="../../src/assets/time.png" class="post-cribu-img"/><span class="status-text">{{topic.attendCount}}人投稿</span>
-             <img src="../../src/assets/time.png" class="post-cribu-img"/><span class="status-text">举报</span>
+          <div class="post-oper-div">
+             <img src="../../src/assets/post.png" class="post-cribu-img"/><span class="status-text">{{topic.attendCount}}人投稿</span>
+             <img src="../../src/assets/flag.png" id="post-flag"/><span class="status-text">举报</span>
              <img src="../../src/assets/arrow.png" class="post-arrow-btn">
           </div>
         </div>
