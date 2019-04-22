@@ -1,7 +1,14 @@
 import Vue from 'vue'
+
+import elementUi from 'element-ui'
+// import 'element-ui/lib/theme-chalk/index.css';
+
 import App from './app.vue'
 import router from './router.js'
 import store from './vuex.js'
+
+//引入element-ui
+Vue.use(elementUi);
 
 new Vue({
   router,

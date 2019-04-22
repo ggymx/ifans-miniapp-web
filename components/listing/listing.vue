@@ -33,15 +33,41 @@
           <img src="../../src/assets/heart.png" id="heart"/><!--
           --><slot name="like"></slot>
           </div>
+          <!--element-ui-->
+          <el-dropdown :hide-on-click="false" trigger="click">
+             <span class="el-dropdown-link">
+              <div class="update-div">
+                 <img src="../../src/assets/plane.png" id="plane"/><!--
+               --><span>分享</span>
+              </div>
+             </span>
+               <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item><img src="../../src/assets/link.png"/>复制链接</el-dropdown-item>
+                <el-dropdown-item><img src="../../src/assets/webo.png"/>新浪微博</el-dropdown-item>
+                <el-dropdown-item><img src="../../src/assets/wechat.png"/>微信扫一扫</el-dropdown-item>
+              </el-dropdown-menu>
+          </el-dropdown>
+            
+          <!-- <div class="update-div">
+          <img src="../../src/assets/plane.png" id="plane"/>
+          <span>分享</span>
+          </div> -->
+
           <div class="update-div">
-          <img src="../../src/assets/plane.png" id="plane"/><!--
-          --><span>分享</span>
+           <img src="../../src/assets/flag.png" id="flag"/>
+            <span>举报</span>
           </div>
-          <div class="update-div">
-           <img src="../../src/assets/flag.png" id="flag"/><!--
-          --><span>举报</span>
-          </div>
-           <img src="../../src/assets/arrow.png" class="list-arrow-btn"/>
+
+           <el-dropdown :hide-on-click="false" trigger="click">
+             <span class="el-dropdown-link">
+               <img src="../../src/assets/arrow.png" class="list-arrow-btn"/>
+             </span>
+               <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item>屏蔽</el-dropdown-item>
+                <el-dropdown-item>删除</el-dropdown-item>
+              </el-dropdown-menu>
+          </el-dropdown>
+           
       </div>
     </div>
   </div>

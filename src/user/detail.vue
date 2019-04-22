@@ -66,13 +66,23 @@ export default {
         this.init_data();
     },
     methods:{
+
         init_data(){
+          const loading = this.$loading({
+          lock: true,
+          text: '拼命加载中',
+          spinner: 'el-icon-loading',
+          background: 'rgba(0, 0, 0, 0.7)'
+          });
             const userId=this.$route.params.uId
             fetch.get('/v1/user/detail',{
                 id: userId
             }).then(res=>{
                 this.$data.receive=res.data;
                 console.log('接收到的user-------------',this.$data.receive);
+                setTimeout(() => {
+                  loading.close()
+                }, 500);
             });
         }
     }

@@ -59,6 +59,14 @@ export default {
   //方法区
   methods:{
     init_data(){
+      //创建一个加载框-element-ui
+       const loading = this.$loading({
+          lock: true,
+          text: '拼命加载中',
+          spinner: 'el-icon-loading',
+          background: 'rgba(0, 0, 0, 0.7)'
+        });
+
       fetch.get('/v1/post/home-list',
       {
         cursor: this.$data.cursor,
@@ -68,6 +76,10 @@ export default {
         this.$data.posts=res.data.posts;
         this.$data.cursor=res.data.cursor;
         console.log('receive=======',this.$data.posts);
+        //关闭加载框
+        setTimeout(() => {
+          loading.close();
+        }, 500);
         }
       );
     },

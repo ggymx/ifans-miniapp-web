@@ -49,6 +49,12 @@
   width:17px;
 }
 
+.post-arrow-btn{
+  width:22px;
+  height:5px;
+  cursor: pointer;
+}
+
 @media screen and (min-device-width:1000px){
 *{
     margin: 0;
@@ -117,10 +123,6 @@
 .status-text{
   margin-right: 30px;
 }
-.post-arrow-btn{
-  width:22px;
-  height:5px;
-}
 
 
 }
@@ -164,7 +166,7 @@
 
 /*蓝色描边按钮*/
 .topic-btn{
-  margin-right: 30px;
+  margin-right: 20px;
   height: 34px;
   width: 122px;
   background-color: #FFF;
@@ -189,11 +191,7 @@
   margin-left:20px
 }
 .status-text{
-  margin-right: 30px;
-}
-.post-arrow-btn{
-  width:22px;
-  height:5px;
+  margin-right: 20px;
 }
 
 }

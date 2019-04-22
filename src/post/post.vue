@@ -21,7 +21,20 @@
           <div class="post-oper-div">
              <img src="../../src/assets/post.png" class="post-cribu-img"/><span class="status-text">{{topic.attendCount}}人投稿</span>
              <img src="../../src/assets/flag.png" id="post-flag"/><span class="status-text">举报</span>
-             <img src="../../src/assets/arrow.png" class="post-arrow-btn">
+
+             <el-dropdown :hide-on-click="false" trigger="click">
+             <span class="status-text el-dropdown-link">
+              <img src="../../src/assets/arrow.png" class="post-arrow-btn">
+             </span>
+               <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item>屏蔽</el-dropdown-item>
+                <el-dropdown-item>删除</el-dropdown-item>
+              </el-dropdown-menu>
+          </el-dropdown>
+            
+
+             <!-- <img src="../../src/assets/arrow.png" class="post-arrow-btn"> -->
+             <!-- <el-button type="primary" icon="el-icon-edit"></el-button> -->
           </div>
         </div>
       </div>
@@ -76,6 +89,14 @@ export default {
   },
   methods:{
     init_data(){
+
+        const loading = this.$loading({
+          lock: true,
+          text: '拼命加载中',
+          spinner: 'el-icon-loading',
+          background: 'rgba(0, 0, 0, 0.7)'
+        });
+
       const tid=this.$route.params.tid;
       console.log('接受到的tid-------------',tid);
       fetch.get('/v1/post/answer-list',{
@@ -93,6 +114,9 @@ export default {
         this.$data.topic=res.data.post;
         console.log('接收到的topic数据--------',this.$data.topic);
       })
+      setTimeout(() => {
+        loading.close()
+      }, 500);
     },
     goUser(uId){
         this.$router.push(`/user/${uId}`);
