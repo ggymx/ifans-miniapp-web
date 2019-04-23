@@ -26,13 +26,13 @@
              
       </div>
           <ul class="naviList-iphone">
-            <li style="margin-right:81px;margin-left:8px">
+            <li style="margin-right:78px;margin-left:15px">
               <router-link to="/index" class="app-not-a">热门话题</router-link>
             </li>
-            <li style="margin-right:81px">
+            <li style="margin-right:78px">
                 <router-link to="/dailyhot" class="app-not-a">每日热点</router-link>
             </li>
-            <li style="margin-left:5px;">
+            <li style="margin-right:10px;">
                <router-link to="/user" class="app-not-a">我的首页</router-link>
             </li>
           </ul>

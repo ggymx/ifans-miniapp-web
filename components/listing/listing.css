@@ -186,7 +186,7 @@
     .item{
         display: flex;
         flex-direction: column;
-        background: white;
+        /* background: white; */
         margin-top: 16px;
         border-bottom-style: solid;
         border-width: 1px;
@@ -224,6 +224,7 @@
        color: #8590a6;
     }
     .name{
+        margin-top: 2px;
         margin-right:15px;
         letter-spacing: 1.5px;
     }
@@ -267,7 +268,7 @@
 
     .cribu{
         font-size: 11px;
-        margin-top: 2px;
+        margin-top: 3px;
     }
     .update-group{
         display:inline-block;
