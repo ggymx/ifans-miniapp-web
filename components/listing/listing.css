@@ -27,6 +27,14 @@
     margin-top: 10px;
 }
 
+.context{
+    margin-bottom:25px;
+    font-size: 16px;
+    color: #999;
+    display: inline-block;
+    line-height: 2;
+}
+
 @media screen and (min-device-width:1000px){
 .item{
     display: flex;
@@ -46,12 +54,8 @@
     font-size: 18px;
     color: #333;
 }
-.context{
-    margin-bottom:25px;
-    font-size: 16px;
-    color: #999;
+.context{ 
     width: 580px;
-    display: inline-block
 }
 /*包含头像，姓名等状态文本*/
 .topic-status{
@@ -121,11 +125,7 @@
         color: #333;
     }
     .context{
-        margin-bottom:25px;
-        font-size: 16px;
-        color: #999;
         width: 566px;
-        display: inline-block
     }
     /*包含头像，姓名等状态文本*/
     .topic-status{
@@ -193,11 +193,8 @@
         color: #333;
     }
     .context{
-        margin-bottom:25px;
         font-size: 13px;
-        color: #999;
         width: 100%;
-        display: inline-block
     }
     /*包含头像，姓名等状态文本*/
     .topic-status{

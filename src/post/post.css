@@ -2,6 +2,7 @@
   margin-top: 35px;
   font-size: 18px;
   color: #666;
+  line-height: 2;
 }
 .avatar-div{
   display: flex;
@@ -231,7 +232,7 @@
 }
 
 .topic-title{
-  margin-bottom: 30px;
+  margin-bottom: 17.5px;
   font-size: 17px;
   color: #333;
 }
@@ -240,7 +241,7 @@
 .topic-btn{
   margin-right: 15px;
   height: 34px;
-  width: 55px;
+  width: 62px;
   background-color: #FFF;
   border-radius: 3px;
   border-style: solid;

@@ -74,7 +74,7 @@ export default {
       ).then(res=>{
         this.$data.posts=res.data.posts;
         this.$data.cursor=res.data.cursor;
-        console.log('receive=======',this.$data.posts);
+        console.log('receive=======++++++++',this.$data.posts);
         //关闭加载框
         setTimeout(() => {
           loading.close();
@@ -108,7 +108,6 @@ export default {
     
   }
 }
-
 </script>
 
 <style>
