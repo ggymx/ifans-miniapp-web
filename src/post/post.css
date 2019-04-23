@@ -18,10 +18,10 @@
 }
 
 .post-date{
-  white-space:pre-line;
   white-space: pre-line;
   color: #666;
   font-size: 16px;
+  letter-spacing: 0.5px;
 }
 
 .post-oper-div{
@@ -221,27 +221,25 @@
   display: flex;
     flex-direction: column;
     background: white;
-    margin-top: 17.5px;
-    /* padding-left: 20px; */
+    margin-top: 6px;
     border-bottom-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-color: #eee;
     height: auto;
-    /* margin-left: 20px; */
     width: 100%;
 }
 
 .topic-title{
-  margin-bottom: 17.5px;
+  margin-bottom: 16px;
   font-size: 17px;
   color: #333;
 }
 
 /*蓝色描边按钮*/
 .topic-btn{
-  margin-right: 15px;
-  height: 34px;
-  width: 62px;
+  margin-right: 10px;
+  height: 25px;
+  width: 70px;
   background-color: #FFF;
   border-radius: 3px;
   border-style: solid;
@@ -251,6 +249,7 @@
   font-size: 10px;
   padding-right: 0px;
   padding-left: 0px;
+  padding-top: 0px;
 }
 
 .post-avatar{
@@ -266,7 +265,7 @@
   width:17px;
   height:13px;
   margin-right:5px;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 
 #post-flag{
@@ -283,7 +282,8 @@
   /* margin-left:20px */
 }
 .status-text{
-  margin-right: 15px;
+  margin-top: 4px;
+  margin-right: 10px;
   font-size:10px
 }
 .post-arrow-btn{
@@ -291,15 +291,15 @@
   height:5px;
 }
 .topic-text{
-  margin-top: 17.5px;
+  margin-top: 16px;
   font-size: 13px;
   color: rgb(102, 102, 102)
 }
 .oper-div{
-  margin-top: 20px;
+  margin-top: 16px;
   font-size: 16px;
   color: #8590a6;
-  margin-bottom: 22.5px
+  margin-bottom: 16px
 }
 
 .post-date{
@@ -309,6 +309,12 @@
 
 .post-oper-div{
   margin-left:0px;
+  display: flex;
+    width: 161px;
+    align-items: center;
+    float: right;
+    margin-right: 8px;
+    margin-top: 1px;
 }
 
 .post-username{
