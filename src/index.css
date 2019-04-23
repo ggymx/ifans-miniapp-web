@@ -124,6 +124,7 @@
             font-size: 17px;
             text-decoration: none;
             color: rgb(51,51,51);
+            line-height: 1.5;
         }
         .index-hide{
            display: none;
