@@ -39,6 +39,16 @@ module.exports = {
       }
     ]
   },
+
+  /*引入的jquery */
+  // plugins: [ 
+  //   new webpack.ProvidePlugin({ 
+  //         $:'jquery', 
+  //         jQuery:'jquery', 
+  //         'windows.jQuery':'jquery'
+  //  }) 
+  //  ], 
+
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
