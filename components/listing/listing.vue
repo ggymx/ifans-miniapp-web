@@ -38,7 +38,7 @@
              <span class="el-dropdown-link">
               <div class="update-div">
                  <img src="../../src/assets/plane.png" id="plane"/><!--
-               --><span>分享</span>
+               --><span style="margin-top: 3px;">分享</span>
               </div>
              </span>
                <el-dropdown-menu slot="dropdown">
@@ -55,7 +55,7 @@
 
           <div class="update-div">
            <img src="../../src/assets/flag.png" id="flag"/>
-            <span>举报</span>
+            <span style="margin-top: 3px;">举报</span>
           </div>
 
            <el-dropdown :hide-on-click="false" trigger="click">
