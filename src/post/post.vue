@@ -125,12 +125,12 @@ export default {
     }
   }
 }
-  $(document).ready(function(){
-      alert('..................');
-      $('#pari').click(function(){
-        alert('测试。。。。。。');
-      })
-    });
+  // $(document).ready(function(){
+  //     alert('..................');
+  //     $('#pari').click(function(){
+  //       alert('测试。。。。。。');
+  //     })
+  //   });
 </script>
 
 <style>
