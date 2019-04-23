@@ -66,9 +66,12 @@
 </template>
 
 <script>
+import $ from '../../jquery-3.0.0.min.js'
+
 import listing from '../../components/listing/listing.vue'
 import sidebar from '../../components/sidebar/sidebar.vue'
 import fetch from '../fetch.js'
+
 export default {
   name: 'post',
   data () {
@@ -122,9 +125,12 @@ export default {
     }
   }
 }
-// $("#pari").click(function(){
-//   alert('点击触发');
-// });
+  $(document).ready(function(){
+      alert('..................');
+      $('#pari').click(function(){
+        alert('测试。。。。。。');
+      })
+    });
 </script>
 
 <style>
