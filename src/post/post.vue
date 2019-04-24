@@ -47,7 +47,7 @@
            <span slot="name" class="name">{{item.user.nickname}}</span>
            <span slot="context" class="context">{{item.text}}</span>
            <!-- <span slot="date" class="date">{{item.createAt}}</span> -->
-            <span slot="date" class="date">2018.04.12 11.25</span>
+            <span slot="date" class="date bottom-date">2018.04.12 11.25</span>
            <span slot="like">{{item.likeCount}}</span>
            <!-- <img slot="like" v-bind:src="`${item.user.avatar}`"/> -->
          </listing>
