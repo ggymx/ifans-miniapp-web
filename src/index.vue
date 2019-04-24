@@ -15,7 +15,7 @@
           <span slot="context" class="context" v-if="item.text.trim().length!==0">{{item.text}}</span>
           <span slot="name"  class="name">{{item.user.nickname}}</span>
           <!-- <span slot="date" class="date">{{item.createAt}}</span> -->
-           <span slot="date" class="date">2018.04.12 11.25</span>
+           <span slot="date" class="date top-date">2018.04.12 11.25</span>
           <span slot="post" class="cribu">{{item.likeCount}}人投稿</span>
         </listing>
       </blockquote>

@@ -16,8 +16,8 @@
         </div>
         <span class="topic-text">{{topic.text}}</span>
         <div class="oper-div">
-          <button class="topic-btn" id="pari">参与话题</button>
-          <button class="topic-btn" id="share">分享话题</button>
+          <button class="topic-btn" id="pari"><img src="../../src/assets/canyu-big.png" class="canyu-img">参与话题</button>
+          <button class="topic-btn" id="share"><img src="../../src/assets/share-big.png" class="share-img">分享话题</button>
           <div class="post-oper-div">
              <img src="../../src/assets/post.png" class="post-cribu-img"/><span class="status-text">{{topic.attendCount}}人投稿</span>
              <img src="../../src/assets/flag.png" id="post-flag"/><span class="status-text">举报</span>

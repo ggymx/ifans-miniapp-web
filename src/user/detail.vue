@@ -24,10 +24,14 @@
         </listing>
         <!--投稿listing-->
          <listing message="post" v-bind:post="item" v-else-if="item.type===2">
+          <span slot="title"  class="title">
+            <!--传递话题id-->
+            <router-link v-bind:to="`/post/${item.id}`" class="not-a">测试</router-link>
+          </span>
            <span slot="name" class="name">{{item.user.nickname}}</span>
            <span slot="context" class="context">{{item.text}}</span>
            <!-- <span slot="date" class="date">{{item.createAt}}</span> -->
-             <span slot="date" class="date">2018.04.12 11.25</span>
+             <span slot="date" class="date bottom-date">2018.04.12 11.25</span>
            <span slot="like">{{item.likeCount}}</span>
            <!-- <img slot="like" v-bind:src="`${item.user.avatar}`"/> -->
          </listing>

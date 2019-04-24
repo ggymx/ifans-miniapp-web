@@ -22,11 +22,14 @@
   color: #666;
   font-size: 16px;
   letter-spacing: 0.5px;
+  line-height: 1;
+  margin-top: 1px;
 }
 
 .post-oper-div{
-  display:inline-block;
+  display:inline-flex;
   margin-left:5px;
+  align-items: center;
 }
 
 .post-username{
@@ -39,7 +42,7 @@
 .post-cribu-img,#post-flag{
   height:17px;
   margin-right:10px;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 
 .post-cribu-img{
@@ -54,6 +57,19 @@
   width:22px;
   height:5px;
   cursor: pointer;
+}
+
+.canyu-img,.share-img{
+  width:12px;
+  height:14px;
+  margin-right: 2px;
+}
+.share-img{
+  width:14px;
+}
+
+.status-text{
+  line-height: 1
 }
 
 @media screen and (min-device-width:1000px){
@@ -104,7 +120,10 @@
   border-style: solid;
   border-width: 1px;
   border-color: #0084ff;
-  color:#0084ff
+  color:#0084ff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .post-avatar{
@@ -123,6 +142,7 @@
 }
 .status-text{
   margin-right: 30px;
+ 
 }
 
 
@@ -175,7 +195,10 @@
   border-style: solid;
   border-width: 1px;
   border-color: #0084ff;
-  color:#0084ff
+  color:#0084ff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .post-avatar{
@@ -251,6 +274,9 @@
   padding-right: 0px;
   padding-left: 0px;
   padding-top: 0px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .post-avatar{
@@ -266,7 +292,7 @@
   width:17px;
   height:13px;
   margin-right:5px;
-  /* margin-top: 5px; */
+  margin-top: 5px;
 }
 
 #post-flag{
@@ -306,6 +332,7 @@
 .post-date{
   color: rgb(102, 102, 102);
   font-size: 11px;
+  margin-top: 3px;
 }
 
 .post-oper-div{
@@ -322,6 +349,10 @@
   margin-right: 13px;
   font-size: 12px;
   color: rgb(102, 102, 102);
+}
+
+.canyu-img,.share-img{
+    display: none;
 }
 
 }

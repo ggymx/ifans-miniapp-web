@@ -3,12 +3,12 @@
     width:21px;
     height:17px;
     margin-right:10px;
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
 #heart,#plane,#flag{
     margin-right:10px;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     height:17px;
 }
 #heart{
@@ -42,7 +42,9 @@
 
 .update-div>span,.cribu{
     color: #8590a6;
+    line-height: 1;
 }
+
 
 @media screen and (min-device-width:1000px){
 .item{
@@ -78,6 +80,7 @@
     border-radius:50%;
     background:gray;
     margin-right: 15px;
+    margin-top: 2px;
 }
 .name,.date{
    font-size: 16px;
@@ -86,13 +89,22 @@
 .name{
     margin-right:25px;
     letter-spacing: 1.5px;
+    margin-top: 3px;
 }
 .date{
     margin-right:40px;
+    margin-top: 1px;
+    line-height: 1;
+}
+.top-date{
+    margin-top: 3px;
 }
 .update-div{
   margin-right: 40px;
-  display: flex
+  display: flex;
+  line-height: 1;
+  align-items: center;
+  height: 25px;
 }
 /*投稿的div*/
 .cribu-div{
@@ -105,6 +117,8 @@
 
 .cribu{
     margin-top:2px;
+    line-height: 1;
+    margin-top: 6px;
 }
 .update-group{
     display:inline-block;
@@ -159,10 +173,13 @@
     }
     .date{
         margin-right:45px;
+        line-height: 1;
     }
     .update-div{
       margin-right: 30px;
-      display: flex
+      display: flex;
+      height: 25px;
+      align-items: center;
     }
     /*投稿的div*/
     .cribu-div{
@@ -172,7 +189,10 @@
     }
   
     .cribu{
-        margin-top:2px;
+        margin-top:4px;
+    }
+    .cribu-img{
+        margin-top: 5px;
     }
     .update-group{
         display:inline-block;
@@ -217,24 +237,29 @@
         border-radius:50%;
         background:gray;
         margin-right: 10px;
-        margin-top: 4px;
+        margin-top: 7px;
     }
     .name,.date{
        font-size: 12px;
        color: #8590a6;
     }
     .name{
-        margin-top: 2px;
+        margin-top: 8px;
         margin-right:15px;
         letter-spacing: 1.5px;
     }
     .date{
         margin-right: 15px;
-        margin-top: 5px;
+        margin-top: 10px;
     }
+     .bottom-date{
+         margin-top: 0px;
+     }
     .update-div{
       margin-right: 20px;
-      display: flex
+      display: flex;
+      height: 14px;
+      align-items: center;
     }
     /*投稿的div*/
     .cribu-div{
@@ -246,34 +271,35 @@
     .cribu-img{
         width:17px;
         height:13px;
-        margin-top: 8px;
+        margin-top: 11px;
     }
 
     
 #heart{
     width:14px;
     height:13px;
-    margin-top: 9px;
+    /* margin-top: 9px; */
 }
 #plane{
     width:14px;
     height:14px;
-    margin-top: 8px;
+    /* margin-top: 8px; */
 }
 #flag{
       width:14px;
     height:14px;
-    margin-top: 9px
+    /* margin-top: 8px; */
 }
 
     .cribu{
         font-size: 11px;
-        margin-top: 3px;
+        margin-top: 10px;
     }
     .update-group{
         display:inline-block;
         height:25px;
         display:flex;
+        align-items: center;
     }
     .update-div>.cribu-img{
         width:17px;
@@ -282,7 +308,7 @@
         margin-top: 5px;
     }
     .update-div>span{
-        margin-top: 3px;
+        /* margin-top: 3px; */
         font-size:10px;
     }
     .list-arrow-btn{
